@@ -9,11 +9,32 @@
       fValue = double.Parse(Console.ReadLine());
       Console.WriteLine("Введите число 2");
       secValue = double.Parse(Console.ReadLine());
+      Console.WriteLine("выберите операцию");
       operation = Console.ReadLine();
 
       switch (operation) 
       {
+        case "+":
+        Console.WriteLine(fValue + secValue);
+        break;
+        case "-":
+        Console.WriteLine(fValue - secValue);
+        break;
+        case "*":
+        Console.WriteLine(fValue * secValue);
+        break;
+        case "/":
         
+        if (secValue == 0) 
+        {
+           Console.WriteLine(0);
+        }
+        else 
+        {
+           Console.WriteLine(fValue / secValue);
+        }
+        
+        break;
         default:
         Console.WriteLine("Ошибка");
         break;
