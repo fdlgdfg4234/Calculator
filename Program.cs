@@ -17,7 +17,9 @@
         case "+":
         Console.WriteLine(fValue + secValue);
         break;
-        
+        case "-":
+        Console.WriteLine(fValue - secValue);
+        break;
         default:
         Console.WriteLine("Ошибка");
         break;
