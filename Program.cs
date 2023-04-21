@@ -20,8 +20,20 @@
         case "-":
         Console.WriteLine(fValue - secValue);
         break;
-         case "*":
+        case "*":
         Console.WriteLine(fValue * secValue);
+        break;
+        case "/":
+        
+        if (secValue == 0) 
+        {
+           Console.WriteLine(0);
+        }
+        else 
+        {
+           Console.WriteLine(fValue / secValue);
+        }
+        
         break;
         default:
         Console.WriteLine("Ошибка");
